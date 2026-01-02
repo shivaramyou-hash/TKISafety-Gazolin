@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Service Details</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Heebo:wght@400;500;600;700&display=swap">
+
+    <!-- Icons & Plugins -->
+    <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="assets/fonts/flaticon/style.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/lity.min.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+
+    <!-- Loader -->
+    <div class="loading">
+        <div class="loading-box">
+            <div class="lds-roller">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <div id="header"></div>
+
+    <!-- Breadcrumb -->
+    <section class="breadcrumb-header" id="page"
+        style="background-image: url(assets/images/header/01_breadcrumb-header.jpg)">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="banner">
+                        <h1 id="breadcrumb-title"></h1>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><i class="fas fa-angle-right"></i></li>
+                            <li id="breadcrumb-name"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About / Service Intro -->
+    <section class="about-us home-2 py-100">
+        <div class="container">
+            <div class="row">
+
+                <!-- Text -->
+                <div class="col-lg-7">
+                    <div class="about-us-text-box">
+                        <div class="sec-title">
+                            <h2 id="service-heading"></h2>
+                            <h3 id="service-subheading"></h3>
+                            <p class="sec-explain" id="service-description"></p>
+                        </div>
+
+                        <div class="features-style-2">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="item">
+                                        <i class="ar-icons-toolbox"></i>
+                                        <div class="content-box">
+                                            <h5 id="feature1-title"></h5>
+                                            <p id="feature1-desc"></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="item">
+                                        <i class="ar-icons-trolley"></i>
+                                        <div class="content-box">
+                                            <h5 id="feature2-title"></h5>
+                                            <p id="feature2-desc"></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="about-btn">
+                            <a class="btn-1 btn-3" href="01_request-quote.html">
+                                <span>Request a Quote</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image -->
+                <div class="col-lg-5">
+                    <div class="about-us-img-box">
+                        <div class="img-box" id="service-image"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="services home-2">
+        <div class="bg-section">
+            <div class="overlay overlay-2"></div>
+        </div>
+
+        <div class="container">
+            <div class="sec-title">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <h2>Services we offer</h2>
+                        <h3>High quality fire & safety solutions</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div id="services-carousel" class="services-carousel owl-carousel owl-theme"></div>
+        </div>
+    </section>
+
+    <section class="team home-2 py-100-70">
+        <div class="container">
+            <div class="sec-title">
+                <h2>Expert Members</h2>
+                <h3>Qualified Staff</h3>
+            </div>
+
+            <div class="row" id="team-container"></div>
+        </div>
+    </section>
+    <section class="blog py-100-70">
+        <div class="container">
+            <div class="sec-title">
+                <h2>Recent Articles</h2>
+                <h3>Read All News</h3>
+            </div>
+
+            <div class="row" id="blog-container"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <!-- Scroll Up -->
+    <div class="scroll-up">
+        <a class="move-section" href="#page">
+            <i class="fas fa-long-arrow-alt-up"></i>
+        </a>
+    </div>
+
+    <!-- Core JS -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- REQUIRED FOR SERVICES -->
+    <script src="assets/js/owl.carousel.min.js"></script>
+
+    <!-- Main -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- Data -->
+    <script src="assets/data/services.js"></script>
+    <script src="assets/data/team.js"></script>
+    <script src="assets/data/blog.js"></script>
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            fetch("partials/header.html")
+                .then(r => r.text())
+                .then(t => document.getElementById("header").innerHTML = t);
+
+            fetch("partials/footer.html")
+                .then(r => r.text())
+                .then(t => document.getElementById("footer").innerHTML = t);
+        });
+    </script>
+
+    <!-- Dynamic Logic -->
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const key = params.get("service");
+
+        if (!services[key]) {
+            document.body.innerHTML = "<h1 style='text-align:center;padding:100px'>Service Not Found</h1>";
+        } else {
+            const s = services[key];
+
+            document.title = s.title;
+
+            document.getElementById("breadcrumb-title").innerText = s.breadcrumbTitle;
+            document.getElementById("breadcrumb-name").innerText = s.breadcrumbName;
+
+            document.getElementById("service-heading").innerText = s.heading;
+            document.getElementById("service-subheading").innerText = s.subheading;
+            document.getElementById("service-description").innerText = s.description;
+
+            document.getElementById("service-image").style.backgroundImage =
+                `url(${s.image})`;
+
+            document.getElementById("feature1-title").innerText = s.features[0].title;
+            document.getElementById("feature1-desc").innerText = s.features[0].desc;
+
+            document.getElementById("feature2-title").innerText = s.features[1].title;
+            document.getElementById("feature2-desc").innerText = s.features[1].desc;
+        }
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const servicesBox = document.getElementById("services-carousel");
+            if (!servicesBox) return;
+
+            /* 1️⃣ Inject HTML */
+            Object.entries(services).forEach(([key, s]) => {
+                servicesBox.insertAdjacentHTML("beforeend", `
+                <div class="services-carousel-item">
+                    <a class="services-item-img-box"
+                       href="service-details.html?service=${key}"
+                       style="background-image:url(${s.image})">
+                       <span></span>
+                    </a>
+                    <div class="item-box">
+                        <i class="ar-icons-conveyor-1"></i>
+                        <div class="content-box">
+                            <h4>${s.heading}</h4>
+                            <p>${s.description.substring(0, 90)}...</p>
+                            <a class="more"
+                               href="service-details.html?service=${key}">
+                               Read More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            `);
+            });
+
+            /* 2️⃣ DESTROY if already initialized */
+            if ($("#services-carousel").hasClass("owl-loaded")) {
+                $("#services-carousel").trigger("destroy.owl.carousel");
+                $("#services-carousel").removeClass("owl-loaded");
+                $("#services-carousel").find(".owl-stage-outer").children().unwrap();
+            }
+
+            /* 3️⃣ INIT OWL AFTER DOM UPDATE */
+            setTimeout(() => {
+                $("#services-carousel").owlCarousel({
+                    loop: true,
+                    margin: 30,
+                    nav: true,
+                    dots: false,
+                    autoplay: true,
+                    autoplayTimeout: 4000,
+                    smartSpeed: 800,
+                    responsive: {
+                        0: { items: 1 },
+                        768: { items: 2 },
+                        1200: { items: 3 }
+                    }
+                });
+            }, 50);
+        });
+    </script>
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const teamBox = document.getElementById("team-container");
+            if (!teamBox) return;
+
+            team.forEach(m => {
+                teamBox.innerHTML += `
+        <div class="col-md-6 col-lg-4">
+            <div class="team-box">
+                <div class="img-box">
+                    <img src="${m.image}" class="img-fluid" alt="${m.name}">
+                </div>
+                <div class="text-box text-center">
+                    <h5>${m.name}</h5>
+                    <span>${m.role}</span>
+                </div>
+            </div>
+        </div>`;
+            });
+        });
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const blogBox = document.getElementById("blog-container");
+            if (!blogBox) return;
+
+            blogs.forEach(b => {
+                blogBox.innerHTML += `
+        <div class="col-md-6 col-lg-4">
+            <div class="blog-item">
+                <div class="img-box">
+                    <a href="${b.url}">
+                        <img src="${b.image}" class="img-fluid" alt="${b.title}">
+                    </a>
+                </div>
+                <div class="text-box">
+                    <h5>${b.title}</h5>
+                    <span class="blog-date">${b.date}</span>
+                    <p>${b.excerpt}</p>
+                    <a class="btn-1 btn-3 link" href="${b.url}">
+                        <span>Read More</span>
+                    </a>
+                </div>
+            </div>
+        </div>`;
+            });
+        });
+    </script>
+
+</body>
+
+</html>
