@@ -216,7 +216,7 @@ p {
     text-transform: capitalize;
     position: relative;
     text-align: center;
-    background-color: var(--primary-red);
+    background-color: var(--primary-blue);
     z-index: 1;
     font-size: 14px;
     font-weight: 600;
@@ -233,10 +233,12 @@ p {
     -webkit-transition: color 1s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out;
     -o-transition: color 1s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out;
     transition: color 1s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out;
+    color: var(--white) !important;
 }
 .btn-1 span{
     position: relative;
     z-index: 2;
+    color: var(--white) !important;
 }
 .btn-1:after,
 .btn-1:before{
@@ -275,7 +277,7 @@ p {
 }
 .btn-1:hover:after,
 .btn-1:hover:before{
-    background-color: var(--hover-red);
+    background-color: var(--hover-blue);
 }
 .btn-2{
     background-color: var(--primary-blue);
@@ -1719,6 +1721,9 @@ p {
     padding: 50px 50px 0 50px;
     background-color: #FFF;
     border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 .services-carousel-item h4{
     font-size: 24px;
@@ -1730,12 +1735,19 @@ p {
 }
 .services-carousel-item p{
     margin-bottom: 0;
+    flex-grow: 1;
 }
 .services-carousel-item .open-link{
     width: 100%;
     margin-top: 30px;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
+}
+.services-carousel .owl-stage {
+    display: flex;
+}
+.services-carousel .owl-item {
+    display: flex;
 }
 .services-carousel.owl-theme .owl-nav{
     display: none;
@@ -1900,6 +1912,12 @@ p {
     transition: all 0.8s cubic-bezier(0.38, 0.17, 0.09, 0.99);
 }
 .services.home-2 .services-carousel-item .item-box .content-box .more:hover:after,
+
+.services-carousel-item .btn-1 {
+    margin-bottom: 25px;
+    display: inline-block;
+}
+
 .services.home-3 .item-box .content-box .more:hover:after{
     opacity: 1;
     margin-left: 15px;
@@ -2000,6 +2018,7 @@ p {
 }
 .pulse i{
     background-color: var(--primary-blue);
+    color: white;
     width: 55px;
     height: 55px;
     line-height: 55px;
@@ -2156,7 +2175,8 @@ p {
     background-color: #FFF;
     border-radius: 5px;
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 30px;    
+    height: 100%;
 }
 .provide-core-list .provide-core-list-item h4{
     text-transform: capitalize;
@@ -3407,7 +3427,7 @@ p {
 /* :: Widget */
 .widget{
 	margin-bottom: 30px;
-    padding: 40px;
+    padding: 10px;
     border-radius: 5px;
     overflow: hidden;
     border: 1px solid #DDD;
@@ -4514,4 +4534,384 @@ p {
 }
 .page-404-area a{
     margin-top: calc(30px - 16px);
+}
+
+.text-white {
+    color: #ffffff;
+}
+
+/* ================= Our Expertise Section ================= */
+.expertise {
+    padding: 100px 0;
+    background-color: #fff;
+}
+.expertise .sec-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+.expertise .sec-title h2 {
+    color: #1a1a3d;
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.expertise .sec-title p {
+    color: #555;
+    font-size: 18px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.expertise-card {
+    margin-bottom: 40px;
+    transition: all 0.3s ease;
+}
+.expertise-card .img-box {
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 25px;
+    box-shadow: 0 15px 45px rgba(0,0,0,0.1);
+}
+.expertise-card .img-box img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.expertise-card:hover .img-box img {
+    transform: scale(1.08);
+}
+.expertise-card h4 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1a1a3d;
+    margin-bottom: 15px;
+}
+.expertise-card p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+.expertise-card .view-more {
+    display: inline-flex;
+    align-items: center;
+    color: var(--primary-blue);
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.expertise-card .view-more i {
+    margin-left: 10px;
+    font-size: 14px;
+    transition: transform 0.3s ease;
+}
+.expertise-card .view-more:hover {
+    color: #1a1a3d;
+}
+.expertise-card .view-more:hover i {
+    transform: translateX(8px);
+}
+
+@media (max-width: 1199px) {
+    .expertise-card .img-box img {
+        height: 380px;
+    }
+}
+@media (max-width: 991px) {
+    .expertise .sec-title h2 {
+        font-size: 32px;
+    }
+    .expertise-card .img-box img {
+        height: 320px;
+    }
+}
+
+/* ================= Advanced Expertise Page Styles ================= */
+
+/* Hero Section */
+.expertise-hero {
+    height: 80vh;
+    min-height: 600px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.expertise-hero .overlay {
+    background: rgba(0, 0, 0, 0.6);
+}
+.expertise-hero .hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 1100px;
+}
+.expertise-hero h1 {
+    color: #fff;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 30px;
+}
+.expertise-hero .hero-links .shop-now {
+    color: var(--white);
+    font-weight: 600;
+    font-size: 18px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.expertise-hero .hero-links .shop-now i {
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+}
+.expertise-hero .hero-links .shop-now:hover i {
+    transform: translateX(10px);
+}
+
+/* Expertise Card V2 */
+.expertise-card-v2 {
+    margin-bottom: 40px;
+}
+.expertise-card-v2 .img-box {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+.expertise-card-v2 .img-box img {
+    transition: transform 0.5s ease;
+}
+.expertise-card-v2:hover .img-box img {
+    transform: scale(1.05);
+}
+.expertise-card-v2 h4 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #1a1a3d;
+}
+.expertise-card-v2 p {
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+.expertise-card-v2 .link-arrow {
+    font-weight: 600;
+    color: var(--primary-blue);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.expertise-card-v2 .link-arrow i {
+    margin-left: 8px;
+    font-size: 12px;
+}
+
+/* Service Grid & Cards V2 (Mockup Style) */
+.service-card-v2 {
+    background-color: transparent;
+    border-radius: 40px;
+    overflow: hidden;
+    height: 100%;
+    transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+    margin-bottom: 40px;
+}
+.service-card-v2:hover {
+    transform: translateY(-12px);
+}
+.service-card-v2 .img-overlay-box {
+    position: relative;
+    overflow: hidden;
+    border-radius: 40px;
+    aspect-ratio: 1 / 1;
+}
+.service-card-v2 .img-overlay-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.service-card-v2:hover .img-overlay-box img {
+    transform: scale(1.1);
+}
+.service-card-v2 .icon-badge {
+    position: absolute;
+    bottom: -15px;
+    right: -15px;
+    width: 80px;
+    height: 80px;
+    background-color: #98D8D8; /* Mockup Mint Color */
+    color: #1a1a3d;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    z-index: 5;
+    transition: all 0.3s ease;
+}
+.service-card-v2 .icon-badge:hover {
+    background-color: var(--primary-blue);
+    color: #fff;
+}
+.service-card-v2 .card-body {
+    padding-top: 30px !important;
+}
+.service-card-v2 h5 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #1a1a3d;
+}
+.service-card-v2 p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+/* CTA Banner */
+.cta-banner {
+    background: #e9f5ff;
+    padding: 40px;
+    border-radius: 15px;
+}
+.cta-banner h3 {
+    margin: 0;
+    color: #1a1a3d;
+    font-weight: 700;
+}
+
+/* Why Choose */
+.why-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    height: 100%;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.03);
+    transition: transform 0.3s ease;
+}
+.why-card:hover {
+    transform: translateY(-5px);
+}
+.why-card .why-icon {
+    width: 50px;
+    height: 50px;
+    background: #e9f5ff;
+    color: var(--primary-blue);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.why-card h5 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+.why-card p {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+}
+
+/* Industry Section */
+.industry-section .sub-text {
+    display: block;
+    color: var(--primary-blue);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+.industry-section h2 {
+    font-size: 42px;
+    font-weight: 700;
+}
+.industry-list {
+    padding: 0;
+    list-style: none;
+}
+.industry-list li {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #444;
+    display: flex;
+    align-items: center;
+}
+.industry-list li i {
+    color: var(--primary-blue);
+    margin-right: 15px;
+}
+
+/* Clients & Stats */
+.stat-box h3 {
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--primary-blue);
+}
+.stat-box p {
+    font-size: 18px;
+    color: #666;
+}
+.client-logos .logo-item {
+    padding: 20px;
+    filter: grayscale(1);
+    opacity: 0.6;
+    transition: all 0.3s ease;
+}
+.client-logos .logo-item:hover {
+    filter: grayscale(0);
+    opacity: 1;
+}
+
+/* Testimonials V2 */
+.testimonials-v2 {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+.testimonials-v2 .overlay {
+    background: rgba(26, 26, 61, 0.85);
+}
+.testimonial-card-v2 {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    padding: 40px;
+}
+.testimonial-card-v2 .quote-icon {
+    font-size: 40px;
+    color: var(--primary-blue);
+    margin-bottom: 30px;
+}
+.testimonial-card-v2 p {
+    font-size: 24px;
+    font-style: italic;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+.testimonial-card-v2 .user-info h5 {
+    font-weight: 700;
+    margin: 0;
+}
+.testimonial-card-v2 .user-info span {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* Helper Class */
+.rounded-20 { border-radius: 20px !important; }
+
+@media (max-width: 991px) {
+    .expertise-hero h1 { font-size: 40px; }
+    .industry-section h2 { font-size: 32px; }
+    .testimonial-card-v2 p { font-size: 18px; }
 }
